@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, onSnapshot, addDoc, deleteDoc, doc, getDocs , query, where} from "firebase/firestore"
+import Link from "next/link";
 
 export async function getStaticProps() {
   const firebaseConfig = {
@@ -33,12 +34,13 @@ export default function Home(props) {
   for (let i in props.unpaid) {
     elements.push([props.unpaid[i].name, props.unpaid[i].url, "unpaid"])
   }
-  // push log
+  // // push log
   elements.push(["...", "/log", "log"])
 
   return (
       <div>
         <Nav elements = {elements}/>
+
       </div>
   )
 }

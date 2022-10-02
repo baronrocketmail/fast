@@ -6,7 +6,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { initializeApp } from "firebase/app";
 import {getFirestore, collection, onSnapshot, addDoc, deleteDoc, doc, getDocs, query, where} from "firebase/firestore"
 
-import CheckoutForm from "../components/CheckoutForm";
+import CheckoutForm from "./components/CheckoutForm";
 import Nav from "./components/Nav";
 
 // Make sure to call loadStripe outside of a component’s render to avoid

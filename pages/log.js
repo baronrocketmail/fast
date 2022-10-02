@@ -56,9 +56,7 @@ export default function Log(props) {
 
     return (
         <div>
-
-
-            <Nav elements = {elements}/>
+            <Nav elements = {elements} showSettings ={true}/>
             <table>{table}</table>
         </div>
     )

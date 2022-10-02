@@ -1,7 +1,33 @@
 
 
+
+@font-face {
+  font-family: "canto";
+  src: url(../pages/Canto-SemiBold.ttf) format("truetype");
+  font-weight: 400;
+  font-display: block;
+}
+/*.footer {*/
+/*  display: flex;*/
+/*  flex: 1;*/
+/*  !*padding: 20px;*!*/
+/*  !*border-top: 1px solid #eaeaea;*!*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  position: sticky;*/
+/*  top: 100%;*/
+/*}*/
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
 html{
-  font-family: canto;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   text-align: center;
   font-size:6vw;
   padding:0;
@@ -11,15 +37,22 @@ html{
   font-weight:400;
   position:relative;
   text-rendering:geometricPrecision;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
+}
+.bar{
+  /*display: flex;*/
+}
+svg{
+  padding-left: 9px;
+  padding-right: 9px;
 }
 a {
   text-decoration: none;
-  color:black;
+  color:white;
 }
 a:visited {
-  color:black;
+  color:white;
 }
 table {
   border-collapse: collapse;
@@ -31,12 +64,12 @@ table {
 td{
   text-align: left;
   border: 1px solid;
-  padding:0.1em;
+  /*padding:0.1em;*/
 
 }
 
 tr{
-  border: 1px solid
+  border: 1px solid;
 }
 
 /*html,*/
@@ -94,7 +127,8 @@ tr{
 /*}*/
 
 form{
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /*#payment-message {*/
